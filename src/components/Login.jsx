@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { login as authLogin } from "../store/authSlice";
 import { Button, Input, Logo } from "./index";
-import { UseDispatch, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import authService from "../appwrite/auth";
 import { useForm } from "react-hook-form";
 
@@ -31,7 +31,7 @@ function Login() {
   return (
     <div className="flex items-center justify-center w-full">
       <div
-        className={`mx-auto w-full max-w-lg bg-gray-200 
+        className={`mx-auto w-full max-w-lg bg-gray-200
         rounded-xl p-10 border border-black/10`}
       >
         <div className="mb-2 flex justify-center">
@@ -74,7 +74,7 @@ function Login() {
               placeholder="Enter your password"
               {...register("password", { required: true })}
             />
-            <Button type="submit" className="">
+            <Button type="submit" className="w-full">
               Sign In
             </Button>
           </div>
