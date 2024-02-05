@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function PostCard({ $id, title, featuredImage }) {
   return (
-    //appwrite vaiable name is $id
+    //appwrite id vaiable name is start with $id
     <Link to={`/post/${$id}`}>
       <div className="=w-full bg-gray-100 rounded-xl p-4">
         <div className="w-full justify-center mb-4">
